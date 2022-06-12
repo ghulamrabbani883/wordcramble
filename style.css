@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.main {
+  background-color: rgb(172, 202, 172);
+  height: 100vh;
+  width: 100%;
+}
+.heading {
+  width: 100%;
+  height: 10vh;
+  background-color: rgb(30, 129, 30);
+  opacity: 0.5;
+  line-height: 10vh;
+}
+.heading h2 {
+  text-align: center;
+  color: white;
+}
+.scramble-container {
+  background-color: rgb(30, 129, 30);
+  width: 50%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2vh;
+  align-items: center;
+  margin: auto;
+  margin-top: 50px;
+  color: whitesmoke;
+}
+.scramble-container p {
+  font-size: 18px;
+  margin: 1vh;
+  text-align: center;
+}
+.scramble-container input {
+  padding: 5px;
+  width: 300px;
+  height: 40px;
+  outline: none;
+  border: none;
+}
+.scramble-container button {
+  padding: 10px 50px;
+  background-color: white;
+  color: brown;
+  border: 1px solid brown;
+  cursor: pointer;
+}
+.scramble-container button:hover {
+  background-color: antiquewhite;
+}
+.hide-input {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .scramble-container {
+    width: 60%;
+    height: 60vh;
+  }
+}
+
+@media (max-width: 800px) {
+  .scramble-container {
+    width: 70%;
+    height: 70vh;
+  }
+  .scramble-container input {
+    width: 250px;
+    height: 35px;
+  }
+  .scramble-container button {
+    padding: 8px 40px;
+  }
+}
+@media (max-width: 600px) {
+  .scramble-container {
+    width: 70%;
+    height: 70vh;
+  }
+  .scramble-container input {
+    width: 200px;
+    height: 30px;
+  }
+  .scramble-container button {
+    padding: 7px 30px;
+  }
+}
